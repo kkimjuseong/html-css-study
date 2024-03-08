@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    img{
+      /* 이미지의 경우 가로세로중 한쪽만 바꿔줘도 바뀌게 된다. */
+      /* 강제로 가로 세로 둘다 다르게 지정할 경우 이미지가 깨질 수 있으니 한쪽만 조정해야한다. */
+      width: 100px;
+
+      /* height: 100px; */
+    }
+  </style>
+
+
+</head>
+
+
+<body>
+  <!-- img태그에선 src alt 가 필수속성인다 scr는 사진위치 alt는 사진이 안나왔을때 나타날 글자 -->
+  <img src="../../마이멜로디.jpg" alt="마이멜로디">
+
+  <!-- a안에 img 태그를 넣어주면 링크를 걸어줄 수 있다. -->
+  <!-- img의 경우 inline-block을 가지고 있어서 width사이즈 조절이 가능하다. -->
+  <a href="https://google.com">
+    <img src="../../마이멜로디.jpg" alt="마이멜로디">
+    <img src="../../마이멜로디.jpg" alt="마이멜로디">
+  </a>
+
+
+  <!-- iframe 태그는 다른 html문서를 넣어 줄 수있다. -->
+  <iframe src="" frameborder="0"></iframe>
+
+</body>
+</html>

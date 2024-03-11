@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* nth-child 는 특정 자식태그에 style값을 넣어줄때 사용 */
+    #fruits li:nth-child(1) {
+      color: red;
+    }
+    /* last-child 는 무조건 마지막 자식에만 적용함. */
+    #food li:last-child{
+      background: olive;
+    }
+    #fruits li:first-child{
+      font-style: 24px;
+    }
+    /* n에 0부터 순차적으로 대입했을때 선택되는 태그 스타일 even*/
+    #fruits li:nth-child(2n){
+      background: aqua;
+    }
+    /* 홀수 odd 짝수 even  odd*/
+    #fruits li:nth-child(2n+1){
+      background: violet;
+    }
+
+    #fruits li:nth-child(n+1){
+      font-style: italic;
+    }
+    #food li:not(.melon){
+      list-style: none;
+    }
+    /* nth-child원리는 nth차일드에서 n번째 자식을찾음 */
+    .sports div:nth-child(1){
+      background: blue;
+    }
+
+    .sports div:nth-of-type(3){
+      background: red;
+    }
+    
+  </style>
+
+</head>
+
+<body>
+
+  <div class="sports">
+    <div>축구</div>
+    <div>농구</div>
+    <p>하하호호</p>
+    <div>배구</div>
+    <div>야구</div>
+  </div>
+
+  <ul id="fruits">
+    <li>딸기</li>
+    <li>망고</li>
+    <li>사과</li>
+    <li>오렌지</li>
+    <li>바나나</li>
+    <li>자몽</li>
+    <li>라임</li>
+  </ul>
+  
+  <ul id="food">
+    <li>초코빵</li>
+    <li class="melon">메론빵</li>
+    <li>바밤빵</li>
+    <li>크림빵</li>
+
+
+  </ul>
+1
+</body>
+
+
+</html>

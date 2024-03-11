@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <style>
+    /* +는 형제 선택자 즉 동생을 말한다. */
+    .orange + li{
+      color: orangered;
+    }
+
+      /* 첫 번째 tr 빼고 전부 */
+      tr + tr{
+
+      }
+li + li{
+  font-style: italic;
+  list-style: none;
+  font-style: 700;
+  border: 1px solid black
+}
+/* ~은 형들중에 red가 있는애를 찾아서 그 밑으로 적용 */
+  .red ~ li{
+    background: yellow;
+  }
+
+  </style>
+
+</head>
+<body>
+
+  <ul>
+    <li class="orange">오렌지</li>
+    <li>딸기</li>
+    <li>사과</li>
+    <li class="orange">어린쥐</li>
+    <li class="red">자몽</li>
+    <li>포도</li>
+    <li>레몬</li>
+  </ul>
+  
+</body>
+</html>

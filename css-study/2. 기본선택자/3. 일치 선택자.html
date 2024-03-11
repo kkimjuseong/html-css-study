@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* li.orange 여기서 .은 and 가 적용 li와 오랜지 이런식으로 인식하게 됨. span.하게되면 span만 적용됨 */
+    li.orange{
+      background: orange;
+    }
+    /* .앞에 클래스 선택자가 아닌 #apple인 id선택자를 입력해도 적용이 된다. */
+    /*  두개의 조건을 다 만족하는것을 일치 선택자라 한다. 개를 적용시켜도 됨 */
+    /*  일치 선택자를 사용하려면 모두 붙여야지 띄어쓰기하면 안된다. */
+    #apple.green{
+      color: yellowgreen;
+    }
+    
+    h1.yello.low#change.primary{
+      background: violet;
+    }
+
+  </style>
+
+
+</head>
+
+  <body>
+    <!-- ul.food>li.korean*4 -->
+
+    <h1 id="change" class="yello low primary">안녕하세요</h1>
+
+    <div>
+      <ul>
+        <li id="apple" class="green">사과</li>
+        <li>포도</li>
+        <li class="orange">오렌지</li>
+      </ul>
+    
+
+      <div class="green">당근</div>
+      <p class="big">토마토</p>
+      <span class="orange">오렌지</span>
+
+    </div>
+
+  </body>
+
+
+
+
+
+</html>

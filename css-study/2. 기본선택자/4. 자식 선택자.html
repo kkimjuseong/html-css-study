@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    /* 
+    자식, 후손, 형제 선택자는 가장 마지막 선택자가 타겟이고
+    앞에는 전부 조건이다.
+    */
+    /* 선택자는 다양한 방법이 존재 li.orange 해도 지장없음. */
+    ul > .orange{
+      background: orange;
+    }
+    /* 밑에 조건을 만족하는 #apple에 적용 만약 
+       div가 없다면 조건이 만족되지 않아 적용되지 않음. */
+    body > div > ul > #apple{
+      color: red;
+    }
+
+    /* 서비스 운영하다 보면 태그 구조가 바뀌는 경우가 존재함
+       예를들어 위에 ul구조가 section에 감싸지는 경우가 있는데
+       그러면 위에 구조가 깨지게 됨 그래서 자식선택자는 위험하여
+       잘 사용하지 않는다 대신 후손선택자를 사용함.
+    */
+
+  </style>
+
+
+</head>
+
+  <body>
+
+    <!-- #circle>h1.title>.left.low>#banana
+    <div id="circle">
+      <h1 class="title">
+        <div class="left low">
+          <div id="banana">ㅎㅇㅎㅇ</div>
+        </div>
+      </h1>
+    </div> -->
+
+    <!-- ul.food>li.korean*4 -->
+
+    <h1 id="change" class="yello low primary">안녕하세요</h1>
+
+    <div>
+      <ul>
+        <li id="apple" class="green">사과</li>
+        <li>포도</li>
+        <li class="orange">오렌지</li>
+      </ul>
+    
+
+      <div class="green">당근</div>
+      <p class="big">토마토</p>
+      <span class="orange">오렌지</span>
+
+    </div>
+
+  </body>
+
+
+
+
+
+</html>

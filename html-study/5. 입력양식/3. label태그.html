@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+    <style>
+      label{
+        display: block;
+      }
+    </style>
+
+</head>
+
+<body>
+
+  <!-- 아직form의 url이 정해져있지 않는다면 action창에 #을쓴다 -->
+  <form action="#">
+    <!-- 채크박스에 라벨태그가 붙게되면 자동로그인이라는 글자를 클릭해도 체크가 된다. -->
+    <!-- label태그는 기본속성이 인라인인데 블록으로 바꿔줘야한다. -->
+    <label>
+      <input type="checkbox"> 자동로그인
+    </label>
+
+    <label>
+      이름: <input type="text">
+    </label>
+
+    <!-- for = remember는 input의 id값을 가져온다.  -->
+    <label for="remember">아이디 기억하기</label>
+
+    <div>hello</div>
+    <div>hello</div>
+    <div>hello</div>
+    <div>hello</div>
+    <div>hello</div>
+
+    <input type="radio" id="remember">
+
+  </form>  
+
+
+</body>
+</html>

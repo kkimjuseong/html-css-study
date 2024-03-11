@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+    <style>
+
+      input{
+        /* height: 100px; */
+        display: inline-block;
+      }
+      button{
+        /* width: 60px; */
+        display: inline-block;
+
+      }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+  <form action="https://www.naver.com">
+
+  <!-- 마이페이지에서 수정할때 value속성을 사용해서 아이디를 고정시켜놓는다. -->
+  <!-- placeholder = 검색창이 비어있을때 표시하는 속성. -->
+    <input type="text" value="춘식이" placeholder="이름을 쓰세요">
+    
+    <br><input type="password">
+    <br><input type="email">
+    
+    <!-- checkbox는 name을 똑같이 맞춰주는게 중요하다. -->
+    <!-- disabled는 체크박스가 비활성화 되도록 만드는 속성. -->
+    <!-- checked는 체크가 되어있는 상태로 표시됨 즉 개인정보 수정할때 적용하는 속성. -->
+    <br><input type="checkbox" name="hobby" disabled> 게임
+    <input type="checkbox" name="hobby" checked> 수영
+    <input type="checkbox" name="hobby"> 축구
+
+    <!-- checkbox와 비슷한 속성. -->
+    <br><input type="radio" name="mail"> 예
+    <input type="radio" name="mail"> 아니요
+
+    <!-- value옵션 초기에 숫자를 정하고시작 -->
+    <br> <input type="number" value="1" min="3" max="10">
+    
+    <br>
+    <input type="range" 
+           value="5" 
+           min="0" 
+           max="10">
+
+    <br>
+    <!-- file을 선택할 수 있게 하는 속성. -->
+    <!-- multiple 여러개의 파일속성을 올릴 수 있는 속성 -->
+    <!-- accept="image/*"는 올릴 수 있는 파일이 이미지로 제한. -->
+    <input type="file" multiple accept="image/*"> 
+
+    <br>
+    <!-- hidden은 사용자 몰래 서버로 보낼 데이터.  -->
+    <input type="hidden" name="nick" value="똥멍청이">
+
+    <br>
+    <button type="button">button</button>
+    <button type="submit">submit</button>
+    <button type="reset">reset</button>
+
+    <!-- 인풋태그에도 버튼을 만들 수 는 있으나 직관성이 떨어지고, 닫는태그가 없기때문이다.
+         예를들어 버튼태그는 자식태그를 넣어줄 수 있다 이미지 같은것. 인풋태그는 불가능. -->
+    <input type="button" value="버튼">
+    
+  </form>  
+
+
+</body>
+
+
+
+</html>

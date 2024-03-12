@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*width의 auto는 100%
+      height의 auto는 0
+      둘다 기본 설정일 경우 각 태그마다 세로값이 없으면 박스는 생성되지x
+      
+    */
+
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      background: orange;
+      padding: 20px 0; 
+      box-sizing: border-box;
+      width: auto;
+      height: 200px;
+    }
+    .box{
+      background: greenyellow;
+      height: 120px;
+    }
+    .item{
+      background: violet;
+      height: 60px;
+    }
+
+  </style>
+
+</head>
+<body>
+  
+  <div class="container">
+    <div class="box">
+      <div class="item"></div>
+    </div>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style> 
+  /* 40em = html의 기본픽셀인 16px * 40em = 640px가 된다.
+     rem = 무조건 html의 설정픽셀에만 영향을 받고,
+     em의 경우 font-size를 설정해주면 그 설정값의 영향을 받는다   
+     rem을 써야할때 html style에 font를 지정하고 
+     body에 폰트를 따로 적용시킨다.  
+   */
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    div{
+    border: 2px solid gray; 
+    }
+    .root{
+      /* width: 40em; */
+      font-size: 20px;
+      width: 20rem;
+    }
+    .parent{
+      width: 50%;
+      margin-left: 10%;
+    }
+    .child{
+      width: 50%;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="root">ROOT
+    <div class="parent">PARENT
+      <div class="child">CHILD1</div>
+      <div class="child">CHILD2</div>
+    </div>
+  </div>
+  
+</body>
+</html>

@@ -17,3 +17,20 @@
   3월 11일 html 마무리 후 css 1강 2강까지 진행사항 올림
 
   3월 12일 css 3,4 강 진행사항 올림
+
+  리셋url
+  @import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css');
+  
+*{
+  box-sizing: border-box;
+}
+.clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+a{
+  color: inherit;
+  /* 밑줄제거 명령어*/
+  text-decoration: none;
+}

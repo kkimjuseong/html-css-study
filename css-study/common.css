@@ -1,0 +1,16 @@
+/* 공통 css를 적는 파일 */
+/* css파일이 다른 css파일을 불러오는 것이 import */
+@import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css');
+*{
+  box-sizing: border-box;
+}
+.clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+a{
+  color: inherit;
+  /* 밑줄제거 명령어*/
+  text-decoration: none;
+}

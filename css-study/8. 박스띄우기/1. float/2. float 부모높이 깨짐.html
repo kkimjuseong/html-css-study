@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 똑같은 박스여러개를 만들때 들어가는 내용사항이 똑같기 때문에 
+       공통 class를 한개 더 넣어줘서 공통 크기를 넣어주면 전부 적용이
+       된다. clear의 경우에도 공통 class를 하나 만들어줘서 해결.
+    */
+    .ct{
+      width: 700px;
+      padding: 20px;
+      border: 3px solid;
+      margin: 20px;
+    }
+    .container1{
+      border-color: red;
+      /* 두 번째 야매 */
+      /* overflow: hidden; */
+    }
+    /* 정석적인 방법 */
+    .clearfix::after{
+      /* before after 속성에는 content무조건필수
+         도형형태는 display 필수!!
+      */
+      clear: both;
+      content: '';
+      display: block;
+    }
+    .container2{
+      border-color: blue;
+    }
+    .container2{
+      border-color: green;
+    }
+    .box{
+      width: 200px;
+      height: 150px;
+      border: 3px solid green;
+      background: yellowgreen;
+      border-radius: 20px;
+      float: left;
+    }
+
+    /* 첫 번째 방법은 새로운 태그를 하나 추가해서 박스 안에서 클리어해줌 
+       하지만 쓰레기
+    .vbox{
+      clear: both;
+    }
+   */
+
+  </style>
+
+</head>
+<body>
+  
+  <div class="ct container1 clearfix">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <div class="ct container2 clearfix">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <div class="ct container3 clearfix">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+</body>
+</html>

@@ -21,19 +21,3 @@
   3월 13일 css 5,6,7,8진행완료
   css 파일을 가져와주는 @inport 배움
 
-  리셋url
-  @import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css');
-  
-*{
-  box-sizing: border-box;
-}
-.clearfix::after{
-  content: '';
-  display: block;
-  clear: both;
-}
-a{
-  color: inherit;
-  /* 밑줄제거 명령어*/
-  text-decoration: none;
-}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      margin: 100px;
+    }
+    .box{
+      width: 100px;
+      height: 100px;
+      background: orange;
+      border: 4px dashed red;
+      font-size: 30px;
+      /* 텍스트 중앙정렬 */     
+      /* text-align: center;
+      line-height: 100px; */
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box:nth-child(2){
+      /* 박스에 엡솔룻을 넣어버림 박스의 자리가 빼앗긴다.
+         또한 relative완 다르게 이동하는 기준이 원래자리
+         기준이 아니다. 
+      */
+      position: absolute;
+      left: 50px;
+      /* top: 50px; */
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+
+  
+</body>
+</html>

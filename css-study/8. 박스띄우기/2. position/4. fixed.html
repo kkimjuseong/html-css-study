@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      height: 2000px;
+    }
+    header{
+      border-bottom: 2px solid gray;
+      /* 
+         position abs, fixed를 설정하면 width의 기본값 100%가 
+         없어지기 때문에 수동으로 다시 걸어줘야 함
+      */
+      width: 100%;
+      /* 언제나 화면 전체가 기준으로 움직인다. */
+      position: fixed;
+      top: 0;
+    }
+    header h1{
+      font-size: 40px;
+      padding: 0;
+      margin: 20px 20px 30px;
+      float: left;
+    }
+    header nav{
+      float: right;
+    }
+    .clearfix::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    header nav ul{
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
+    }
+    header nav ul li{
+      /* border: 1px solid #000; */
+      float: left;
+      font-size: 1.5em;
+      font-weight: 700;
+      margin-right: 30px;
+    }
+    span{
+      width: 200px;
+      height: 200px;
+      margin-top: 150px;
+      background: orange;
+      font-size: 3em;
+      /* 
+      인라인 요소에 float , position을 걸어주면 
+      따로 디스플레이를 안 줘도 블록요소로 자동으로 변경이 된다.
+      */
+      /* float: left; */
+      /* position: absolute; */
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <!-- header>h1+(nav>ul>li*4) -->
+  <header class="clearfix">
+    <h1>Logo</h1>
+    <nav>
+      <ul class="clearfix">
+        <li>소개</li>
+        <li>커뮤니티</li>
+        <li>자료실</li>
+        <li>회원가입</li>
+      </ul>
+    </nav>
+  </header>
+
+  <span>룰루랄라</span>
+
+</body>
+</html>

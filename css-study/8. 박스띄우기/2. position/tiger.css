@@ -4,7 +4,7 @@
   background:gray;
   width: 100%;
   margin: 40px auto;
-  padding: 0 100px;
+  padding: 0 200px;
   padding-bottom: 70px;
 }
 div header{
@@ -58,7 +58,7 @@ div#wrapper div.container div.content p{
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 1.1;
+  line-height: 1.5;
   padding: 20px;
   text-align: justify;
 }

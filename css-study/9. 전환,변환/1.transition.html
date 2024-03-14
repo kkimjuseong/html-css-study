@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 100px;
+      height: 100px;
+      background: red;
+      margin: 50px;
+
+
+      /* transition-property: background, width; */
+      /* transition-duration: 3s, 1s; */
+      /* transition-delay: 1s; */
+      /* 균일한 속도로 증가와 감소를 시켜줌 */
+      /* transition-timing-function: linear; */
+      
+      transition: all 1s 1s linear;
+    }
+    .box:hover{
+      width: 300px;
+      background: greenyellow;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="box"></div>
+
+</body>
+</html>

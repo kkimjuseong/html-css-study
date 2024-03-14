@@ -1,0 +1,145 @@
+@import url(../../common.css);
+
+body {
+
+  background: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  font-family: '굴림', 'Gulim', serif;
+  padding: 0 100px;
+  padding-bottom: 70px;
+  
+}
+
+#wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+#wrapper header{
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 1.3;
+  background: orange;
+}
+#wrapper header h1{
+  color: white;
+  font-size: 6em;
+  font-weight: 700;
+  background: orange;
+  /* padding: 0 20px; */
+}
+#wrapper header span{
+  display: block;
+  color: white;
+  font-size: 16px;
+}
+#wrapper header h2{
+  background: gray;
+  font-size: 12px;
+}
+
+
+
+#wrapper .container{
+  width: 100%;
+  background: white;
+}
+#wrapper div.container .side-menu{
+  float: left;
+  width: 20%;
+}
+#wrapper div.container .side-menu h3{
+  background: red;
+  font-size: 13px;
+  padding: 10px;
+  color: white;
+}
+#wrapper div.container .side-menu ul{
+  font-size: 10px;
+  padding: 10px;
+}
+#wrapper div.container .side-menu ul li a{
+  text-decoration: underline;
+  text-align: justify;
+  line-height: 2;
+}
+
+
+
+#wrapper .container .main-content{
+  background: gray;
+  float: left;
+  width: 60%;
+  padding: 0 10px;
+}
+#wrapper .container .main-content .art-piece .title{
+  background: blue;
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+}
+#wrapper .container .main-content .art-piece .artist{
+  font-size: 20px;
+  padding-top: 10px;
+  font-weight: 700;
+}
+#wrapper .container .main-content .art-piece .detail{
+  font-size: 11px;
+  padding-top: 10px;
+
+}
+
+
+#wrapper .container .banner{
+  float: left;
+  width: 20%;
+}
+#wrapper .container .banner h3{
+  padding: 10px;
+}
+#wrapper .container .banner h3 .all{
+  display: block;
+  color: gray;
+  font-size: 20px;
+  text-decoration: underline;
+}
+#wrapper .container .banner h3 .love{
+  display: block;
+  text-decoration: underline;
+  font-size: 18px;
+  color: orange;
+}
+#wrapper .container .banner h3 strong{
+  font-size: 18px;
+  font-weight: 700;
+}
+#wrapper .container .banner .link{
+  padding: 10px;
+}
+#wrapper .container .banner .link li{
+  font-size: 10px;
+}
+#wrapper .container .banner .link span{
+  display: block;
+}
+#wrapper .container .banner .link li a{
+  text-decoration: underline;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+
+#wrapper footer{
+  background: blue;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+#wrapper footer address a {
+  text-decoration: underline;
+}
+#wrapper footer address a span{
+  display: block;
+}

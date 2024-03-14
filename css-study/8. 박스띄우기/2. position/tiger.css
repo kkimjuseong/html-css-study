@@ -60,6 +60,7 @@ div#wrapper div.container div.content p{
   align-items: center;
   line-height: 1.1;
   padding: 20px;
+  text-align: justify;
 }
 div#wrapper footer{
   background: rgb(169, 169, 169);

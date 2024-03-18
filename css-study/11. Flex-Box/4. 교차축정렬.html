@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrapper{
+      height: 600px;
+      border: 4px solid #000;
+      /* paddi ng: 20px; */
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+      /* 
+      align-content: center; 
+      박스 전부가 다 같이 이동하게 된다.   
+      */
+      
+      align-items: center;
+      /* 
+      align-items의 경우 center하면 가상의 중앙선을 기준으로 이동하게됨
+      즉 content와는 다르게 박스가 2줄이라면 2줄이 나뉘게 된다.
+      예를들어 글자 태그가 한 줄일경우 items로 하는게 좋으나 두줄이 넘어
+      가게되는경우는 contens로 해야지 두줄 전체가 중앙 정렬이 된다.
+      */
+    }
+
+    .box{
+      width: 200px;
+      height: 100px;
+      border: 4px solid red;
+      border-radius: 10px;
+      font-size: 40px;
+      
+    }
+    /* 웹 사이트 가로길이를 줄였을때 가로줄로 변경하고싶을때 */
+    @media (max-width: 700px){
+      .wrapper{
+        /* flex-direction: column; */
+      }
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+    <div class="box">D</div>
+    <div class="box">E</div>
+  </div>
+
+</body>
+</html>
